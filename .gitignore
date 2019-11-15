@@ -1,0 +1,73 @@
+# A gitignore for Altera Quartus II that tries to ignore almost all of the
+# automatically Quartus-generated files. This primarily leaves the project,
+# settings, source, and constraint files to be added. The files ignored do not
+# include the bulk of the MegaFunction Wizard generated files which enables
+# a cloned repository to be used (usually) immediately without regenerating
+# Altera IP blocks.
+
+# Need to keep all HDL files and timing constraint files
+# *.vhd
+# *.v
+# *.sdc
+
+# ignore Quartus II generated folders
+*_sim
+db
+greybox_tmp
+incremental_db
+simulation
+testbench
+timing
+
+# ignore Quartus II generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.cmp
+*.done
+*.eqn
+*.hex
+*.html
+*.jdi
+*.jpg
+*.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+#*.tcl
+*.txt # Explicitly add any text files used
+*~
+*example*
+*sopc_*
+PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
+
+# Custom generated files
+*.pdf
+cmp_state.ini
+
+# Exceptions
+!lab1/CA2_SM_AV/simulation/modelsim/00_DefaultWaveforms_CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/00_DefaultWaveforms_CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/01_PUR_CLK_ENABLE_CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/01_PUR_CLK_ENABLE_CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/02_InpTst_CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/02_InpTst_CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/03_BlkTest_CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/03_BlkTest_CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/04_Anlauf01_CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/04_Anlauf01_CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/CA2_SM.vht
+!lab1/CA2_SM_AV/simulation/modelsim/CA2_SM4_specific_modelsim_altera.do
+!lab1/CA2_SM_AV/simulation/modelsim/CA2_SM_SimWF.do
+!lab1/CA2_SM_AV/simulation/modelsim/wll_make_active.sh
+CA2_SM.vhd
+CA2_SM_S.vhd
+

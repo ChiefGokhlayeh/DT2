@@ -1,0 +1,590 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(properties
+	(page_setup "header_footer\nDate: %D\n%f\nProject: %j\n\nPage %p of %P\nRevision: %a\nmargin\n1.000:1.000:1.000:1.000\n1\n1\n1\norientation\n1\npaper_size\n0\npaper_source\n12\n")
+)
+(pin
+	(input)
+	(rect 8 304 176 320)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "HWreset_n_SW" (rect 9 0 88 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 168 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -144 304 -80 320))
+)
+(pin
+	(input)
+	(rect 8 336 176 352)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "STOPP_n_SW" (rect 9 0 79 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 168 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -136 336 -80 352))
+)
+(pin
+	(input)
+	(rect 8 368 176 384)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "START_n_SW" (rect 9 0 78 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 168 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -136 368 -80 384))
+)
+(pin
+	(input)
+	(rect 8 8 176 24)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 168 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "GND" (rect 136 7 157 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -112 8 -56 24))
+)
+(pin
+	(output)
+	(rect 720 688 896 704)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LED" (rect 90 0 111 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 912 688 968 704))
+)
+(pin
+	(output)
+	(rect 576 616 752 632)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Warning_OK" (rect 90 0 151 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 616 880 632))
+)
+(pin
+	(output)
+	(rect 576 632 752 648)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Tw_Expired" (rect 90 0 145 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 632 880 648))
+)
+(pin
+	(output)
+	(rect 576 648 752 664)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Td_Expired" (rect 90 0 144 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 648 880 664))
+)
+(pin
+	(output)
+	(rect 720 720 896 736)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Antrieb_n" (rect 90 0 136 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 720 880 736))
+)
+(pin
+	(output)
+	(rect 576 752 752 768)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "State_Aus" (rect 90 0 140 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 752 880 768))
+)
+(pin
+	(output)
+	(rect 576 768 752 784)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "State_Warnung" (rect 90 0 165 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 768 880 784))
+)
+(pin
+	(output)
+	(rect 576 784 752 800)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "State_Ein" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 824 784 880 800))
+)
+(symbol
+	(rect 648 672 712 720)
+	(text "NOR2" (rect 1 0 26 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 37 20 49)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 54 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 12 36)(pt 23 36))
+		(line (pt 12 13)(pt 23 13))
+		(arc (pt 46 24)(pt 23 13)(rect -6 13 53 72))
+		(arc (pt 5 29)(pt 5 19)(rect -16 8 17 41))
+		(arc (pt 23 35)(pt 46 24)(rect -6 -23 53 36))
+		(circle (rect 46 20 54 28))
+	)
+)
+(block
+	(rect 104 536 312 800)
+	(text "AnlaufSteuerung" (rect 5 5 101 19)(font "Arial" (color 128 0 128)(font_size 8)))	(text "AnlSt" (rect 5 250 30 262)(font "Arial" (color 128 0 128)))	(block_io "clk" (input))
+	(block_io "HW_Reset" (input))
+	(block_io "START" (input))
+	(block_io "STOPP" (input))
+	(block_io "Warning_OK" (input))
+	(block_io "Tw_Expired" (input))
+	(block_io "Td_Expired" (input))
+	(block_io "Antrieb_n" (output))
+	(block_io "LED_On_Off" (output))
+	(block_io "LED_blink_flag" (output))
+	(block_io "TimersResetStart" (output))
+	(block_io "State_Aus" (output))
+	(block_io "State_Warnung" (output))
+	(block_io "State_Ein" (output))
+	(parameter
+		"MOD_SM"
+		"50"
+		"Mod-Zaehler zum Verlangsamen des Taktes; muss >= 2 sein"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(mapper
+		(pt 160 0)
+		(input)
+		)
+	(mapper
+		(pt 208 112)
+		(bidir)
+		)
+	(mapper
+		(pt 208 224)
+		(bidir)
+		)
+	(annotation_block (parameter)(rect 48 504 248 536))
+	(color 0 128 128)
+)
+(block
+	(rect 344 536 536 728)
+	(text "AnlaufTimer" (rect 5 5 73 19)(font "Arial" (color 128 0 128)(font_size 8)))	(text "TimerGruppe" (rect 5 178 67 190)(font "Arial" (color 128 0 128)))	(block_io "clk" (input))
+	(block_io "HW_Reset" (input))
+	(block_io "LED_blink_flag" (input))
+	(block_io "TimersResetStart" (input))
+	(block_io "START" (input))
+	(block_io "Warning_OK" (output))
+	(block_io "Tw_Expired" (output))
+	(block_io "Td_Expired" (output))
+	(block_io "LED_blink_state" (output))
+	(parameter
+		"MOD_AT"
+		"50"
+		"Mod-Zaehler zum Verlangsamen des Taktes; muss >= 2 sein"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"Tw_min"
+		"4"
+		"B_Tw Minimum (Min. Wartezeit Startimpuls)"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"Tw_max"
+		"30"
+		"C_Tw Maximum (Überlauf)"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"Td_max"
+		"20"
+		"D_Td Maximum (Startimpulslänge)"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"BlinkHalfPeriod"
+		"3"
+		"E_Blinkzähler"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(mapper
+		(pt 64 0)
+		(input)
+		)
+	(mapper
+		(pt 0 112)
+		(bidir)
+		)
+	(mapper
+		(pt 192 88)
+		(bidir)
+		)
+	(annotation_block (parameter)(rect 456 440 694 524))
+	(color 0 128 128)
+)
+(block
+	(rect 176 80 344 176)
+	(text "PUReset_Generator" (rect 5 5 118 19)(font "Arial" (color 128 0 128)(font_size 8)))	(text "PUReset_Generator_Inst" (rect 5 82 128 94)(font "Arial" (color 128 0 128)))	(block_io "clk" (input))
+	(block_io "PUReset_n" (output))
+	(parameter
+		"DIV_PUR"
+		"4"
+		"Teiler für Power-Up-Reset; Default-Wert 2"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(mapper
+		(pt 136 0)
+		(input)
+		)
+	(mapper
+		(pt 168 56)
+		(bidir)
+		)
+	(annotation_block (parameter)(rect 96 48 292 76))
+	(color 0 128 128)
+)
+(block
+	(rect 192 256 384 432)
+	(text "Tastenentpreller" (rect 5 5 97 19)(font "Arial" (color 128 0 128)(font_size 8)))	(text "TP_1" (rect 5 162 29 174)(font "Arial" (color 128 0 128)))	(block_io "clk" (input))
+	(block_io "PUReset_n" (input))
+	(block_io "HWreset_n_SW" (input))
+	(block_io "STOPP_n_SW" (input))
+	(block_io "START_n_SW" (input))
+	(block_io "STOPP" (output))
+	(block_io "START" (output))
+	(block_io "HW_Reset" (output))
+	(parameter
+		"Min_Button_Pressed"
+		"1"
+		"Mindestzahl Takte orignialer Taster (Eingang) gedrueckt; muss >= 1 sein"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"Min_Out_Active"
+		"1"
+		"Mindestzahl Takte entprellter Taster (Ausgang) aktiv; muss >= 1 sein"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"MOD_TP"
+		"5"
+		"Mod-Zaehler zum Verlangsamen des Taktes; muss >= 2 sein"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(mapper
+		(pt 0 56)
+		(input)
+		)
+	(mapper
+		(pt 192 64)
+		(bidir)
+		)
+	(annotation_block (parameter)(rect 152 200 405 256))
+	(color 0 128 128)
+)
+(connector
+	(pt 560 704)
+	(pt 576 704)
+	(conduit)
+)
+(connector
+	(pt 576 656)
+	(pt 552 656)
+	(conduit)
+)
+(connector
+	(pt 576 640)
+	(pt 552 640)
+	(conduit)
+)
+(connector
+	(pt 344 648)
+	(pt 312 648)
+	(conduit)
+)
+(connector
+	(pt 536 624)
+	(pt 552 624)
+	(conduit)
+)
+(connector
+	(pt 552 624)
+	(pt 576 624)
+	(conduit)
+)
+(connector
+	(pt 552 624)
+	(pt 552 640)
+	(conduit)
+)
+(connector
+	(pt 552 640)
+	(pt 552 656)
+	(conduit)
+)
+(connector
+	(pt 712 696)
+	(pt 720 696)
+)
+(connector
+	(pt 552 656)
+	(pt 552 688)
+)
+(connector
+	(text "LED_On_Off" (rect 578 704 642 716)(font "Arial" ))
+	(pt 576 704)
+	(pt 648 704)
+)
+(connector
+	(text "LED_blink_state" (rect 578 672 658 684)(font "Arial" ))
+	(pt 552 688)
+	(pt 648 688)
+)
+(connector
+	(pt 560 792)
+	(pt 576 792)
+	(conduit)
+)
+(connector
+	(pt 576 776)
+	(pt 560 776)
+	(conduit)
+)
+(connector
+	(pt 560 760)
+	(pt 560 776)
+	(conduit)
+)
+(connector
+	(pt 560 776)
+	(pt 560 792)
+	(conduit)
+)
+(connector
+	(pt 312 760)
+	(pt 560 760)
+	(conduit)
+)
+(connector
+	(pt 560 760)
+	(pt 576 760)
+	(conduit)
+)
+(connector
+	(pt 312 16)
+	(pt 312 80)
+	(conduit)
+)
+(connector
+	(pt 344 136)
+	(pt 408 136)
+	(conduit)
+)
+(connector
+	(pt 384 320)
+	(pt 408 320)
+	(conduit)
+)
+(connector
+	(pt 312 16)
+	(pt 408 16)
+	(conduit)
+)
+(connector
+	(pt 408 16)
+	(pt 408 136)
+	(conduit)
+)
+(connector
+	(pt 176 312)
+	(pt 192 312)
+	(conduit)
+)
+(connector
+	(pt 176 16)
+	(pt 312 16)
+	(conduit)
+)
+(connector
+	(pt 176 312)
+	(pt 176 344)
+	(conduit)
+)
+(connector
+	(pt 176 344)
+	(pt 176 376)
+	(conduit)
+)
+(connector
+	(pt 408 136)
+	(pt 408 320)
+	(conduit)
+)
+(connector
+	(pt 408 320)
+	(pt 408 496)
+	(conduit)
+)
+(connector
+	(pt 408 496)
+	(pt 408 536)
+	(conduit)
+)
+(connector
+	(pt 264 536)
+	(pt 264 496)
+	(conduit)
+)
+(connector
+	(pt 264 496)
+	(pt 408 496)
+	(conduit)
+)
+(connector
+	(pt 560 728)
+	(pt 720 728)
+	(conduit)
+)
+(connector
+	(pt 560 704)
+	(pt 560 728)
+	(conduit)
+)
+(connector
+	(pt 560 728)
+	(pt 560 760)
+	(conduit)
+)
+(junction (pt 552 656))
+(junction (pt 552 640))
+(junction (pt 552 624))
+(junction (pt 560 728))
+(junction (pt 560 760))
+(junction (pt 560 776))
+(junction (pt 312 16))
+(junction (pt 408 136))
+(junction (pt 408 320))
+(junction (pt 176 312))
+(junction (pt 176 344))
+(junction (pt 408 496))

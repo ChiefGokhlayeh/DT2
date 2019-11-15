@@ -1,0 +1,146 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 12.0 Build 178 05/31/2012 SJ Full Version
+# Date created = 16:13:05  September 30, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CA2_SM4_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:30:09  OCTOBER 23, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VHDL_FILE CA2_SM_package.vhd
+set_global_assignment -name VHDL_FILE PUReset_Generator.vhd
+set_global_assignment -name SDC_FILE CA2_SM.sdc
+set_global_assignment -name VHDL_FILE AnlaufSteuerung.vhd
+set_global_assignment -name VHDL_FILE AnlaufTimer.vhd
+set_global_assignment -name VHDL_FILE Tastenentpreller.vhd
+set_global_assignment -name BDF_FILE CA2_SM.bdf
+set_global_assignment -name COMMAND_MACRO_FILE simulation/modelsim/CA2_SM3_specific_modelsim_altera.001.do
+set_global_assignment -name COMMAND_MACRO_FILE simulation/modelsim/Simulation_Waveforms.do
+set_global_assignment -name TCL_SCRIPT_FILE pin_assign.tcl
+
+# Pin & Location Assignments
+# ==========================
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name TOP_LEVEL_ENTITY CA2_SM
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP3C40F780C6
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH BUS-HOLD"
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CA2_SM_A_Anlauf1.vwf
+
+# start EDA_TOOL_SETTINGS(eda_simulation)
+# ---------------------------------------
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS COMMAND_MACRO_MODE -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_RUN_SCRIPT simulation/modelsim/CA2_SM4_specific_modelsim_altera.do -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# start CLOCK(System_Clock)
+# -------------------------
+
+	# Classic Timing Assignments
+	# ==========================
+set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id System_Clock
+
+# end CLOCK(System_Clock)
+# -----------------------
+
+# --------------------
+# start ENTITY(CA2_SM)
+
+	# Classic Timing Assignments
+	# ==========================
+set_instance_assignment -name CLOCK_SETTINGS System_Clock -to clk_in
+
+	# start LOGICLOCK_REGION(Root Region)
+	# -----------------------------------
+
+		# LogicLock Region Assignments
+		# ============================
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+
+	# end LOGICLOCK_REGION(Root Region)
+	# ---------------------------------
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(CA2_SM)
+# ------------------
+
+
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

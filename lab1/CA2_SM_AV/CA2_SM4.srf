@@ -1,0 +1,7 @@
+{ "" "" "" "Register AnlaufTimer:TimerGruppe\|CntBlink\[1\] will power up to High" {  } {  } 0 18010 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Register AnlaufTimer:TimerGruppe\|TwCnt\[4\] will power up to High" {  } {  } 0 18010 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Register AnlaufTimer:TimerGruppe\|TwCnt\[3\] will power up to High" {  } {  } 0 18010 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Register AnlaufTimer:TimerGruppe\|TwCnt\[2\] will power up to High" {  } {  } 0 18010 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Register AnlaufTimer:TimerGruppe\|TwCnt\[0\] will power up to High" {  } {  } 0 18010 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "Ignored Power-Up Level option on the following registers" {  } {  } 0 18061 "" 0 0 "Quartus II" 0 -1 0 ""}
+{ "" "" "" "*" {  } {  } 0 18009 "" 0 0 "Quartus II" 0 -1 0 ""}
