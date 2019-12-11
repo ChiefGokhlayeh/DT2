@@ -1,0 +1,212 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic       
+# functions, and any output files any of the foregoing           
+# (including device programming or simulation files), and any    
+# associated documentation or information are expressly subject  
+# to the terms and conditions of the Altera Program License      
+# Subscription Agreement, Altera MegaCore Function License       
+# Agreement, or other applicable license agreement, including,   
+# without limitation, that your use is for the sole purpose of   
+# programming logic devices manufactured by Altera and sold by   
+# Altera or its authorized distributors.  Please refer to the    
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		CA2_SPT_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "5.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:26:18  NOVEMBER 18, 2005"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name BDF_FILE CA2_SPT.bdf
+set_global_assignment -name VHDL_FILE ADEC.vhd
+set_global_assignment -name VHDL_FILE MicroProgram.vhd
+set_global_assignment -name BDF_FILE environment.bdf
+set_global_assignment -name VHDL_FILE clk_div.vhd
+set_global_assignment -name VHDL_FILE Entpreller.vhd
+set_global_assignment -name BDF_FILE disp.bdf
+set_global_assignment -name VHDL_FILE LCD_data_prep.vhd
+set_global_assignment -name VHDL_FILE LCD_controller.vhd
+set_global_assignment -name VHDL_FILE Dual_Seven_seg_dec.vhd
+set_global_assignment -name VHDL_FILE ControlUnit.vhd
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_K17 -to clk_fast
+set_location_assignment PIN_W5 -to buttons[0]
+set_location_assignment PIN_W6 -to buttons[1]
+set_location_assignment PIN_AB2 -to buttons[2]
+set_location_assignment PIN_H27 -to leds[0]
+set_location_assignment PIN_H28 -to leds[1]
+set_location_assignment PIN_L23 -to leds[2]
+set_location_assignment PIN_L24 -to leds[3]
+set_location_assignment PIN_J25 -to leds[4]
+set_location_assignment PIN_J26 -to leds[5]
+set_location_assignment PIN_L20 -to leds[6]
+set_location_assignment PIN_L19 -to leds[7]
+set_location_assignment PIN_M8 -to LCD_RW
+set_location_assignment PIN_M7 -to LCD_RS
+set_location_assignment PIN_K3 -to LCD_E
+set_location_assignment PIN_H3 -to LCD_DB[0]
+set_location_assignment PIN_L7 -to LCD_DB[1]
+set_location_assignment PIN_L8 -to LCD_DB[2]
+set_location_assignment PIN_H2 -to LCD_DB[3]
+set_location_assignment PIN_H1 -to LCD_DB[4]
+set_location_assignment PIN_L6 -to LCD_DB[5]
+set_location_assignment PIN_L5 -to LCD_DB[6]
+set_location_assignment PIN_J4 -to LCD_DB[7]
+set_location_assignment PIN_C21 -to seven_segs[0]
+set_location_assignment PIN_B21 -to seven_segs[1]
+set_location_assignment PIN_A21 -to seven_segs[2]
+set_location_assignment PIN_C20 -to seven_segs[3]
+set_location_assignment PIN_A20 -to seven_segs[4]
+set_location_assignment PIN_B20 -to seven_segs[5]
+set_location_assignment PIN_B18 -to seven_segs[6]
+set_location_assignment PIN_E19 -to seven_segs[7]
+set_location_assignment PIN_C19 -to seven_segs[8]
+set_location_assignment PIN_B19 -to seven_segs[9]
+set_location_assignment PIN_A19 -to seven_segs[10]
+set_location_assignment PIN_D18 -to seven_segs[11]
+set_location_assignment PIN_C18 -to seven_segs[12]
+set_location_assignment PIN_A18 -to seven_segs[13]
+set_location_assignment PIN_D21 -to dot_seven_seg_l
+set_location_assignment PIN_B3 -to EXT_A[0]
+set_location_assignment PIN_B5 -to EXT_A[1]
+set_location_assignment PIN_B4 -to EXT_A[2]
+set_location_assignment PIN_C4 -to EXT_A[3]
+set_location_assignment PIN_A5 -to EXT_A[4]
+set_location_assignment PIN_C5 -to EXT_A[5]
+set_location_assignment PIN_D5 -to EXT_A[6]
+set_location_assignment PIN_E6 -to EXT_A[7]
+set_location_assignment PIN_A6 -to EXT_A[8]
+set_location_assignment PIN_B7 -to EXT_A[9]
+set_location_assignment PIN_D6 -to EXT_A[10]
+set_location_assignment PIN_A7 -to EXT_A[11]
+set_location_assignment PIN_D7 -to EXT_A[12]
+set_location_assignment PIN_C6 -to EXT_A[13]
+set_location_assignment PIN_C7 -to EXT_A[14]
+set_location_assignment PIN_B6 -to EXT_A[15]
+set_location_assignment PIN_D8 -to EXT_A[16]
+set_location_assignment PIN_C8 -to EXT_A[17]
+set_location_assignment PIN_H12 -to EXT_D[0]
+set_location_assignment PIN_F12 -to EXT_D[1]
+set_location_assignment PIN_J12 -to EXT_D[2]
+set_location_assignment PIN_M12 -to EXT_D[3]
+set_location_assignment PIN_H17 -to EXT_D[4]
+set_location_assignment PIN_K18 -to EXT_D[5]
+set_location_assignment PIN_H18 -to EXT_D[6]
+set_location_assignment PIN_G18 -to EXT_D[7]
+set_location_assignment PIN_B8 -to EXT_D[8]
+set_location_assignment PIN_A8 -to EXT_D[9]
+set_location_assignment PIN_A9 -to EXT_D[10]
+set_location_assignment PIN_C9 -to EXT_D[11]
+set_location_assignment PIN_E10 -to EXT_D[12]
+set_location_assignment PIN_A10 -to EXT_D[13]
+set_location_assignment PIN_C10 -to EXT_D[14]
+set_location_assignment PIN_B10 -to EXT_D[15]
+set_location_assignment PIN_F17 -to EXT_BEn[1]
+set_location_assignment PIN_M18 -to EXT_BEn[0]
+set_location_assignment PIN_B24 -to RAM_CEn
+set_location_assignment PIN_B26 -to EXT_RDn
+set_location_assignment PIN_C24 -to EXT_WRn
+set_location_assignment PIN_K19 -to Flash_CEn
+set_location_assignment PIN_V25 -to ETHER_ADSn
+set_location_assignment PIN_T20 -to ETHER_DATACSn
+set_location_assignment PIN_D19 -to dot_seven_seg_h
+
+# Timing Assignments
+# ==================
+set_global_assignment -name DO_COMBINED_ANALYSIS ON
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name FAMILY Stratix
+set_global_assignment -name TOP_LEVEL_ENTITY CA2_SPT
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP1S10F780C6ES
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+
+# Timing Analysis Assignments
+# ===========================
+set_global_assignment -name ENABLE_RECOVERY_REMOVAL_ANALYSIS ON
+
+# Assembler Assignments
+# =====================
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
+
+# -------------------------
+# start CLOCK(clk_fast_set)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id clk_fast_set
+
+# end CLOCK(clk_fast_set)
+# -----------------------
+
+# -----------------------------
+# start CLOCK(clk_transfer_set)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name BASED_ON_CLOCK_SETTINGS clk_fast_set -section_id clk_transfer_set
+set_global_assignment -name MULTIPLY_BASE_CLOCK_PERIOD_BY 2 -section_id clk_transfer_set
+
+# end CLOCK(clk_transfer_set)
+# ---------------------------
+
+# ---------------------
+# start ENTITY(CA2_SPT)
+
+	# Timing Assignments
+	# ==================
+
+	# Analysis & Synthesis Assignments
+	# ================================
+
+	# Fitter Assignments
+	# ==================
+
+# end ENTITY(CA2_SPT)
+# -------------------
+
+set_instance_assignment -name CLOCK_SETTINGS clk_fast_set -to clk_fast
+set_instance_assignment -name CLOCK_SETTINGS clk_transfer_set -to "environment:environment_inst|clk_drv"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "disp:disp_inst|LCD_data_prep:LCD_data_prep_inst|LCD_data"
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to LCD_DB
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to EXT_D
+#set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to DOUT_D
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 14622752 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS COMMAND_MACRO_MODE -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_RUN_SCRIPT simulation/modelsim/CA2_SPT_specific_msim.do -section_id eda_simulation
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

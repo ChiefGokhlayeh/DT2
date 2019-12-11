@@ -70,4 +70,9 @@ cmp_state.ini
 !lab1/CA2_SM_AV/simulation/modelsim/wll_make_active.sh
 CA2_SM.vhd
 CA2_SM_S.vhd
+lab2/CA2_SPT/MicroProgram.vhd
+lab2/CA2_SPT/simulation/modelsim/CA2_SPT_SimWF.do
+lab2/CA2_SPT/CA2_SPT.vhd
+lab2/CA2_SPT/disp.vhd
+lab2/CA2_SPT/environment.vhd
 

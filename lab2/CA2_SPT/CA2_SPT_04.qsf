@@ -1,0 +1,133 @@
+# Copyright (C) 1991-2005 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		CA2_SPT_04_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:56:14  NOVEMBER 14, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+
+# Pin & Location Assignments
+# ==========================
+
+# Timing Assignments
+# ==================
+set_global_assignment -name DO_COMBINED_ANALYSIS ON
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name TOP_LEVEL_ENTITY CA2_SPT
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP3C40F780C6
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+
+# Timing Analysis Assignments
+# ===========================
+set_global_assignment -name ENABLE_RECOVERY_REMOVAL_ANALYSIS ON
+
+# Assembler Assignments
+# =====================
+
+# Simulator Assignments
+# =====================
+
+# -------------------------
+# start CLOCK(clk_fast_set)
+
+# Timing Assignments
+# ==================
+set_global_assignment -name FMAX_REQUIREMENT "50 MHz" -section_id clk_fast_set
+
+# end CLOCK(clk_fast_set)
+# -----------------------
+
+# -----------------------------
+# start CLOCK(clk_transfer_set)
+
+# Timing Assignments
+# ==================
+set_global_assignment -name BASED_ON_CLOCK_SETTINGS clk_fast_set -section_id clk_transfer_set
+set_global_assignment -name MULTIPLY_BASE_CLOCK_PERIOD_BY 2 -section_id clk_transfer_set
+
+# end CLOCK(clk_transfer_set)
+# ---------------------------
+
+# ---------------------
+# start ENTITY(CA2_SPT)
+
+# Timing Assignments
+# ==================
+
+# Analysis & Synthesis Assignments
+# ================================
+
+# Fitter Assignments
+# ==================
+
+# end ENTITY(CA2_SPT)
+# -------------------
+
+set_instance_assignment -name CLOCK_SETTINGS clk_fast_set -to clk_fast
+set_instance_assignment -name CLOCK_SETTINGS clk_transfer_set -to "environment:environment_inst|clk_drv"
+set_instance_assignment -name PRESERVE_REGISTER ON -to "disp:disp_inst|LCD_data_prep:LCD_data_prep_inst|LCD_data"
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to LCD_DB
+set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to EXT_D
+#set_instance_assignment -name ENABLE_BUS_HOLD_CIRCUITRY ON -to DOUT_D
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 14622752 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS COMMAND_MACRO_MODE -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_RUN_SCRIPT simulation/modelsim/CA2_SPT_specific_msim.do -section_id eda_simulation
+set_global_assignment -name VHDL_FILE lpm_mux3.vhd
+set_global_assignment -name SDC_FILE CA2_SPT.sdc
+set_global_assignment -name BDF_FILE CA2_SPT.bdf
+set_global_assignment -name VHDL_FILE ADEC.vhd
+set_global_assignment -name VHDL_FILE MicroProgram.vhd
+set_global_assignment -name VHDL_FILE clk_div.vhd
+set_global_assignment -name BDF_FILE environment.bdf
+set_global_assignment -name VHDL_FILE Entpreller.vhd
+set_global_assignment -name BDF_FILE disp.bdf
+set_global_assignment -name VHDL_FILE LCD_data_prep.vhd
+set_global_assignment -name VHDL_FILE LCD_controller.vhd
+set_global_assignment -name VHDL_FILE Dual_Seven_seg_dec.vhd
+set_global_assignment -name VHDL_FILE ControlUnit.vhd
+set_global_assignment -name VHDL_FILE MicroProgPackage.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
